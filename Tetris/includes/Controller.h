@@ -53,19 +53,4 @@ TitleController_class* newTitleController(TitleModel_class*);
 void destroyTitleController(TitleController_class*);
 // -------------------------------------------------------
 
-/*
-// サブクラス ScoreController_class ------------------------
-typedef struct _scoreController ScoreController;
-typedef struct scoreController_class ScoreController_class;
-
-struct scoreController_class {
-    Controller_class super;
-
-    void (*inputeName)(ScoreController_class*);
-};
-
-ScoreController_class* newScoreController(ScoreModel_class*);
-void destroyScoreController(ScoreController_class*);
-// -------------------------------------------------------
-*/
 #endif
