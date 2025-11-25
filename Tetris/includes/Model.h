@@ -77,18 +77,4 @@ TitleModel_class* newTitleModel(Manager_class*);
 void destroyTitleModel(TitleModel_class*);
 // ---------------------------------------------
 
-/*
-// サブクラス ScoreModel_class ------------------
-typedef struct _scoreModel ScoreModel;
-typedef struct scoreModel_class ScoreModel_class;
-
-struct scoreModel_class {
-    Model_class super;
-    ScoreModel* private;
-};
-
-ScoreModel_class* newScoreModel(Manager_class*, int);
-void destroyScoreModel(ScoreModel_class*);
-// ---------------------------------------------
-*/
 #endif
