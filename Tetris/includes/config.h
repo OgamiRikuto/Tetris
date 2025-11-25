@@ -20,10 +20,6 @@
 #define FALL_SPEED 1.0
 #define LOCK_SPEED 0.5
 
-#define PATH_MAX 1028
-#define MAX_NAME_LEN 10
-#define MAX_SOCRE 10
-
 #define BONUS 100
 #define SCORE_CORRCETION 100
 #define MAX_LINE_DELETE 4
