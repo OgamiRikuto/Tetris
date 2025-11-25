@@ -45,16 +45,4 @@ TitleView_class* newTitleView(TitleModel_class*);
 void destroytitleView(TitleView_class*);
 // --------------------------------------------
 
-/*
-// サブクラス ScoreView_class ------------------
-typedef struct scoreView_class ScoreView_class;
-
-struct scoreView_class {
-    View_class super;
-};
-
-ScoreView_class* newScoreView(ScoreModel_class*);
-void destroyscoreView(ScoreView_class*);
-// --------------------------------------------
-*/
 #endif
