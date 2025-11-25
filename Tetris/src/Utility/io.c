@@ -71,7 +71,7 @@
     }
 
     void IO_setupSignalHandlers(void) {
-        SetConsoleCtrlHandler((PHANDLER_ROUTINE)winCtrHandler, TRUE);
+        SetConsoleCtrlHandler((PHANDLER_ROUTINE)winCtrHnadler, TRUE);
     }
 
 #else
