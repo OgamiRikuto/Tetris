@@ -22,7 +22,7 @@ static void setQuit(Model_class*, bool);
 
 /**
  * 初期化を行います.
- * 純粋仮装環境より処理は書きません.
+ * 純粋仮装関数より処理は書きません.
  */
 static void init(void* self) { return;}
 
