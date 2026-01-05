@@ -150,4 +150,3 @@ static void setQuit(Model_class* self, bool boolean)
 {
     self->private->quit = boolean;
 }
-

@@ -1,3 +1,8 @@
+/**
+ * Tetris
+ * 全2395行
+ */
+
 #include <time.h>
 #include <stdlib.h>
 

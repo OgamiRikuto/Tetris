@@ -48,7 +48,6 @@ static KeyType keyState(Controller_class* self)
     return self->private->keyState;
 }
 
-
 /**
  * keyState セッター
  */

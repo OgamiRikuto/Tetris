@@ -151,6 +151,7 @@ static int clearLine(Field_class* self)
             for(int j = i; j > 0; j--) {
                 self->private->filed[j] = self->private->filed[j-1];
             }
+            i++;
             self->private->filed[0] = wall_mask;
         }
     }

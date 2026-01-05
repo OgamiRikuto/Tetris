@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# この .app 自身の場所取得
+APP_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+EXE_DIR="$APP_DIR/Resources/C"
+
+# Terminal で起動
+open -a Terminal "$EXE_DIR/tetris"

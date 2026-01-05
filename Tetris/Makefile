@@ -1,10 +1,13 @@
+PROGRAM := Tetris
 # --- OS 判定して実行ファイル名切り替え---
 ifeq ($(OS), Windows_NT)
 	TARGET := tetris.exe
 	LINK 	:= 
+	INSTDIR := 
 else
 	TARGET := tetris
 	LINK := -lcurses
+	INSTDIR := $(PROGRAM).app/Contents/Resources/C/
 endif
 
 CC := gcc
@@ -26,7 +29,13 @@ $(TARGET): $(OBJ)
 test: $(TARGET)
 	./$(TARGET)
 
+install: $(TARGET)
+	@if [ ! -e $(INSTDIR) ] ; then echo "mkdir $(INSTDIR)" ; mkdir $(INSTDIR) ; fi
+	cp -p $(TARGET) $(INSTDIR)
+
 clean:
-	@rm -f $(OBJ) $(TARGET)
+	@for each in `ls $(TARGET) $(OBJ) 2> /dev/null` ; do echo "rm -f $${each}" ; rm -f $${each} ; done
+	@if [ -e $(INSTDIR) ] ; then echo "rm -f -r $(INSTDIR)" ; rm -f -r $(INSTDIR) ; fi
+
 
 .PHONY: all test clean
